@@ -132,7 +132,6 @@ const registrationScene = new Scenes.WizardScene(
         return ctx.scene.enter('mainMenuScene');
       }
 
-
       try {
         await ctx.reply('⚠️ Список доступных игр пока пуст. Как только игры появятся, они будут добавлены в ваш профиль автоматически.');
       } catch (err) {

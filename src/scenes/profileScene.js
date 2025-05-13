@@ -73,11 +73,10 @@ profileScene.enter(async (ctx) => {
       }
     }
 
-
     const text = formatTavernCard(user, {
       isOwner: true,
       premiumUntil: user.expires_at,
-      showContacts: true,
+      showContacts: true, 
       steamGames // ⬅️ Передаём!
     });
 
