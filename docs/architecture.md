@@ -1,15 +1,13 @@
-# 📂 Структура проекта PlayMatesHub
-
 ```mermaid
 graph TD
-    A[bot.js (entry point)] --> B[controllers/]
-    A --> C[scenes/]
-    A --> D[middleware/]
-    A --> E[services/]
-    A --> F[repositories/]
-    A --> G[cron/]
-    A --> H[utils/]
-    A --> I[keyboards/]
+    A[bot.js] --> B[controllers]
+    A --> C[scenes]
+    A --> D[middleware]
+    A --> E[services]
+    A --> F[repositories]
+    A --> G[cron]
+    A --> H[utils]
+    A --> I[keyboards]
 
     B --> E
     C --> D
