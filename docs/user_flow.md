@@ -1,9 +1,9 @@
 ```mermaid
 graph TD
-    A[User starts bot] --> B[/start]
-    B --> C{Is registered?}
-    C -- No --> D[Registration: name, age, gender, games, ranks] 
-    C -- Yes --> E[Main Menu]
+    A[User opens bot] --> B[Start command]
+    B --> C{Is user registered?}
+    C -- No --> D[Registration: name, age, games]
+    C -- Yes --> E[Main menu]
     D --> E
 
     E --> F[Search]
@@ -13,19 +13,19 @@ graph TD
 
     F --> F1[Select game]
     F1 --> F2[Swipe candidates]
-    F2 --> F3{Match found?}
+    F2 --> F3{Is there a match?}
     F3 -- Yes --> F4[Show contact]
     F3 -- No --> F2
 
     G --> G1[View matches]
     G1 --> G1a{Any matches?}
-    G1a -- No --> G1b[No matches message]
+    G1a -- No --> G1b[Show message: no matches]
 
-    G --> G2[My likes (Premium)]
+    G --> G2[My likes (premium)]
     G2 --> G2a{Any likes?}
-    G2a -- No --> G2b[No likes message]
+    G2a -- No --> G2b[Show message: no likes]
 
-    G --> G3[Who liked me (Premium)]
-    G3 --> G3a{Any inbound likes?}
-    G3a -- No --> G3b[No likes message]
+    G --> G3[Who liked me (premium)]
+    G3 --> G3a{Any incoming likes?}
+    G3a -- No --> G3b[Show message: no likes]
 ```
