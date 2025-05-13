@@ -1,26 +1,26 @@
-# Архитектура бота
+# 📂 Структура проекта PlayMatesHub
 
 ```mermaid
 graph TD
-  A[bot.js (входная точка)] --> B[controllers/]
-  A --> C[scenes/]
-  A --> D[middleware/]
-  A --> E[services/]
-  A --> F[repositories/]
-  A --> G[cron/]
-  A --> H[utils/]
-  A --> I[keyboards/]
+    A[bot.js (входная точка)] --> B[controllers/]
+    A --> C[scenes/]
+    A --> D[middleware/]
+    A --> E[services/]
+    A --> F[repositories/]
+    A --> G[cron/]
+    A --> H[utils/]
+    A --> I[keyboards/]
 
-  B --> E
-  C --> D
-  C --> E
-  D --> E
-  E --> F
-  G --> E
-  G --> F
-  H --> E
-  H --> G
-  C --> I
+    B --> E
+    C --> D
+    C --> E
+    D --> E
+    E --> F
+    G --> E
+    G --> F
+    H --> E
+    H --> G
+    C --> I
 ```
 
 📄 Описание директорий
