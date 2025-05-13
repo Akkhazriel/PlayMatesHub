@@ -2,7 +2,7 @@
 
 ```mermaid
 graph TD
-    A[bot.js (входная точка)] --> B[controllers/]
+    A[bot.js (entry point)] --> B[controllers/]
     A --> C[scenes/]
     A --> D[middleware/]
     A --> E[services/]
